@@ -20,6 +20,9 @@
   ],
   "homepage": "https://github.com/learnboost/node-canvas",
   "repository": "git://github.com/learnboost/node-canvas",
+  "publishConfig": {
+    "registry": "https://npm.pandell.com"
+  },
   "scripts": {
     "test": "make test"
   },

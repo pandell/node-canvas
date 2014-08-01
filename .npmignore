@@ -1,6 +1,11 @@
 testing
-build
 benchmarks
 examples
 support
 test
+
+# non-essential gyp output
+obj
+*.gyp*
+*.sln
+*.vcx*
