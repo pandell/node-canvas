@@ -6,6 +6,7 @@ test
 
 # non-essential gyp output
 obj
-*.gyp*
+*.gyp
+*.gypi
 *.sln
 *.vcx*

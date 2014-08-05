@@ -24,6 +24,9 @@
     "registry": "https://npm.pandell.com"
   },
   "scripts": {
+    "prepublish": "cp binding.gyp binding.gyp.disabled",
+    "postpublish": "rm binding.gyp.disabled",
+    "install": "node -e \"process.exit(require('os').platform() === 'win32' ? 1 : 0)\" && mv binding.gyp.disabled binding.gyp && node-gyp rebuild || exit 0",
     "test": "make test"
   },
   "dependencies": {
